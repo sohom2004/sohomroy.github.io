@@ -1,0 +1,294 @@
+* {
+    transition: 0.5s;
+}
+
+.home {
+    margin: 35px 25px;
+    padding: 0px 25px;
+}
+
+
+/* navigation bar */
+
+.logo-img {
+    height: 6rem;
+    border-radius: 250px;
+    background-color: #D3E0EA;
+}
+
+.nav-bar {
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.nav {
+    text-align: center;
+}
+
+.btn {
+    display: none;
+    font-size: 2.3rem;
+    border: none;
+    background-color: white;
+}
+
+.navig {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 2.5rem;
+}
+
+.nav ul li {
+    list-style: none;
+    padding: 3px;
+}
+
+a {
+    text-decoration: none;
+    margin: 0px 5px;
+    padding: 5px 20px;
+    font-family: 'Ubuntu', sans-serif;
+    color: #276678;
+    border-radius: 15px;
+}
+
+a:hover {
+    color: white;
+    background-color: #276678;
+}
+
+
+/* header part */
+
+.title {
+    text-align: center;
+}
+
+.heading {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 3rem;
+}
+
+.title p {
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.2rem;
+}
+
+
+/* wave hand image */
+
+.wave {
+    padding: 1.4rem;
+    text-align: center;
+    animation-name: wave-animation;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;
+}
+
+
+/* About part */
+
+#About {
+    padding-bottom: 20rem;
+}
+
+.About-part {
+    background-color: #D3E0EA;
+    padding-top: 2rem;
+    padding-bottom: 13.5rem;
+}
+
+.about-image {
+    text-align: center;
+    z-index: 2;
+}
+
+.about-image img {
+    width: 20rem;
+    margin-top: 3rem;
+    display: inline-block;
+    position: absolute;
+    left: 38%;
+    border-radius: 161px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/* projects part */
+
+#Projects {
+    padding-bottom: 10rem;
+}
+
+#Projects h1 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    padding: 2rem 2rem 2rem 4rem;
+}
+
+.project {
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 2rem;
+    border-radius: 23px;
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+}
+
+.project:hover>p {
+    font-size: 1.3rem;
+    display: block;
+    font-family: 'Ubuntu', sans-serif;
+    transition: 0.5s;
+    color: white;
+}
+
+.project:hover>a {
+    display: block;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;
+    transition: 0.5s;
+}
+
+.project:hover>h1 {
+    display: none;
+    transition: 0.5s;
+}
+
+.tindog {
+    background: url("imageedit_1_5108401332.png") center;
+    background-size: 135%;
+}
+
+.drums {
+    background: url("imageedit_3_3990058273.png");
+    background-size: 135%;
+}
+
+.simon {
+    background: url("imageedit_4_3559297045.png") center;
+    background-size: 100%;
+}
+
+.project p {
+    display: none;
+}
+
+.project a {
+    display: none;
+}
+
+#Contact {
+    text-align: center;
+    background-color: #1687A7;
+    padding: 4rem;
+}
+
+.boom {
+    display: flex;
+}
+
+@media (max-width: 1200px) {
+    .heading {
+        font-size: 2rem;
+    }
+    .btn {
+        display: block;
+        margin-top: 1rem;
+    }
+    .nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+    .navig {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 0;
+    }
+    .nav-tag {
+        border-radius: 0px;
+    }
+    .logo-img {
+        height: 4rem;
+    }
+    .about-image img {
+        width: 15rem;
+        margin: auto;
+        display: block;
+    }
+    .About-part {
+        padding-bottom: 11rem;
+        text-align: center;
+    }
+    .project-para {
+        display: none;
+    }
+    .projects a {
+        display: block;
+        border: 1px solid white;
+        border-radius: 10px;
+        font-size: 0.5rem;
+        color: white;
+    }
+    .project:hover>p {
+        display: none;
+    }
+    .project:hover>a {
+        display: block;
+    }
+    .project:hover>h1 {
+        display: block;
+    }
+    .projects {
+        display: flex;
+        flex-direction: column;
+    }
+    .project {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    #About {
+        padding-bottom: 10rem;
+    }
+}
+
+
+/* hand wave animation */
+
+@keyframes wave-animation {
+    0% {
+        transform: rotate( 0.0deg)
+    }
+    10% {
+        transform: rotate(10.0deg)
+    }
+    20% {
+        transform: rotate(-8.0deg)
+    }
+    30% {
+        transform: rotate(10.0deg)
+    }
+    40% {
+        transform: rotate(-4.0deg)
+    }
+    50% {
+        transform: rotate(10.0deg)
+    }
+    60% {
+        transform: rotate( 0.0deg)
+    }
+    100% {
+        transform: rotate( 0.0deg)
+    }
+}
